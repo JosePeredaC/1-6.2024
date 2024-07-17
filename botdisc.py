@@ -45,7 +45,7 @@ async def send_message_from_console():
 
 # Ejecutar el bot con tu token
 async def main():
-    await bot.start('MTIyNTY1NjEzNzQ5MjIwNTY1OQ.GzjDgl.eYma6_aSRFmka39IHIkyEDpE9dTKWQ8rUbDVaw')
+    await bot.start('')
     await send_message_from_console()
 
 # Manejo de excepciones y finalización del bot
