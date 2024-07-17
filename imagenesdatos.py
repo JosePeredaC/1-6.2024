@@ -21,7 +21,7 @@ while codIn <= codfIn:
     valor_codEs = soup.find(id='ctl00_ContentPlaceHolder1_txtUsuario')['value']
     imagen_codEs = soup.find(id='ctl00_ContentPlaceHolder1_imgAlumno')['src']
     reallinkimg = f"http://websecgen.unmsm.edu.pe/carne/{imagen_codEs}"
-    directorio_destino = r'C:\Users\USER\OneDrive\Documentos\RECUPERADOS'
+    directorio_destino = r'C:\Users\USER\OneDrive\Documentos'
     nombre_imagen = f'{valor_codEs}.jpg'
     ruta_archivo = os.path.join(directorio_destino, nombre_imagen)
     img_response = requests.get(reallinkimg)

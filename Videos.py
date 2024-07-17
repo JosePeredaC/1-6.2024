@@ -1,11 +1,9 @@
 #!/usr/bin/env python
 #_*_ coding: utf8 _*_
 from pytube import YouTube
-from bs4 import BeautifulSoup
 import argparse as ag
 import requests
 import json
-import re
 parser = ag.ArgumentParser(description="Descargar videos de Youtube")
 parser.add_argument('-l','--link',help="Link",required=False)
 parser.add_argument('-f','--format',help="Formato del video [1]Audio [2]Video", required=True, type=int)
@@ -84,4 +82,7 @@ def main():
     
     
 if __name__ == '__main__': 
-    main()
+    try:
+        main()
+    except:
+        print("\nSe ha salido del programa")

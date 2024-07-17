@@ -14,8 +14,6 @@ for i in range(mensajes):
     residuo=mensajes % 10
     pyc.copy(frase)
     pg.hotkey('ctrl','v')
-    if residuo == 0:
-        time.sleep(15)
     mensajes= mensajes - 1
     pg.press('enter')
 
